@@ -5,16 +5,58 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
     <style>
+        * {
+            z-index: 2;
+        }
+
         .particle {
             background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: white;
+            min-height: 100vh;
+            background-image: linear-gradient(120deg,
+                    rgba(7, 7, 9, 1) 16%,
+                    rgba(27, 24, 113, 1) 96%);
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 
 <body>
-    <div id="particles" class="particle">
-        <h2>Using the <i> particle.js library </i> in the JavaScript project. </h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cumque doloremque placeat voluptas,
+        numquam fugiat soluta eum veniam facilis est quidem mollitia, dolor blanditiis ad, provident ullam iure
+        dolorem incidunt praesentium similique necessitatibus? Eaque illum non ratione quaerat repellendus
+        molestias. Hic, consectetur cum a nesciunt quidem commodi fugiat in doloribus autem fuga odio aliquam
+        obcaecati corrupti adipisci ducimus nemo numquam veritatis molestias. Quae nam officiis neque eveniet
+        cupiditate est nobis nulla voluptatum provident enim, quia minima obcaecati itaque placeat suscipit,
+        aspernatur eius earum adipisci similique repudiandae omnis? Necessitatibus maxime accusamus assumenda
+        voluptas, exercitationem vitae pariatur ipsa illum qui sed provident.
     </div>
+
+
+    <div id="particles" class="particle">
+    </div>
+
+
+
+
+
+
     <script src="script.js"></script>
 </body>
 
